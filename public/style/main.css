@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5,h6 {
   float: left;
   margin: 5px;
   padding: 2px;
-  position: relative;
+  position: relative; 
   width: 30%;
 }
 

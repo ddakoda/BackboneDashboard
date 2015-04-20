@@ -16,10 +16,10 @@ $(document).ready(function(event) {
     }
   });
 
-  var data = { title: "Rig and Roll", content: "Making moves"}
+  var data = { title: "Drags Feet", content: "Cheatin'"}
   var newCard = new halfCardView(data);
 
-  var dataTwo = { title: "Cash money", content: "Aces are low"};
+  var dataTwo = { title: "wins", content: "winning for pride."};
   var anotherCard = new halfCardView(dataTwo);
 
 });
