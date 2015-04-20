@@ -7,7 +7,7 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Droid Serif', 'Times New Roman', 'Times', serif;
   color: rgba(10,60,150, 0.8);
-  text-shadow: 1px 4px 6px #fff, 0 0 0 #000, 1px 4px 6px #def;
+  /*text-shadow: 1px 4px 6px #fff, 0 0 0 #000, 1px 4px 6px #def;*/
   margin-top: 2px;
   margin-bottom: 2px;
 }
@@ -27,14 +27,29 @@ h1,h2,h3,h4,h5,h6 {
   position: relative;
   width: 46%;
 }
+.block-half:nth-child(1) {
+  background-color: rgb(80, 47, 53);
+}
+.block-half:nth-child(2) {
+  background-color: rgb(68, 102, 110);
+}
 
 .block-third {
   display: block;
   float: left;
   margin: 5px;
   padding: 2px;
-  position: relative; 
+  position: relative;
   width: 30%;
+}
+.block-third:nth-child(1) {
+  background-color: rgb(54, 20, 36);
+}
+.block-third:nth-child(2) {
+  background-color: rgb(177, 167, 108);
+}
+.block-third:nth-child(3) {
+  background-color: rgb(144, 184, 193);
 }
 
 .block-quarter {
@@ -45,12 +60,24 @@ h1,h2,h3,h4,h5,h6 {
   position: relative;
   width: 22%;
 }
-
-.shadow {
-  -webkit-box-shadow: 1px 1px 1px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    1px 1px 1px 1px #ccc;  /* Firefox 3.5 - 3.6 */
-  box-shadow:         1px 1px 1px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+.block-quarter:nth-child(1) {
+  background-color: rgb(54, 38, 44);
 }
+.block-quarter:nth-child(2) {
+  background-color: rgb(13, 22, 26);
+}
+.block-quarter:nth-child(3) {
+  background-color: rgb(131, 92, 107);
+}
+.block-quarter:nth-child(4) {
+  background-color: rgb(152, 146, 106);
+}
+
+/*.shadow {
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  -moz-box-shadow:    1px 1px 1px 1px #ccc;
+  box-shadow:         1px 1px 1px 1px #ccc;
+}*/
 
 .close {
   color: darkgray;
