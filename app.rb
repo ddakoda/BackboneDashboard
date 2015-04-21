@@ -2,10 +2,17 @@ require 'bundler'
 Bundler.require()
 
 ActiveRecord::Base.establish_connection(
-
+:adapter => 'postgresql',
+:database => 'card'
 )
 
+require './models/cards'
+
 get '/' do
+  erb :index
+end
+
+get '/variables' do
   erb :index
 end
 
