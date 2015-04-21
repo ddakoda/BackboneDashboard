@@ -76,4 +76,14 @@ $(document).ready(function(event) {
 
   var dataFour = { title: "You sure have a way with people. -Harold", content: "Well, they're my species! -Maude"};
   var anotherThree = new thirdCardView(dataFour);
+
+  var Cards = Backbone.Collection.extend({
+    model: cardModel
+  });
+
+  var cardModel = Backbone.Model.extend({
+	initialize: function() {
+		console.log("Hey, a card is here!");
+	}
+});
 });

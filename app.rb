@@ -12,36 +12,29 @@ get '/' do
   erb :index
 end
 
-get '/variables' do
-  erb :index
+#Helper
+def card_parameters
+  request_body = JSON.parse(request.body.read.to_s)
+  { title: request_body["title"], message: request_body["message"] }
 end
 
-post '/api/cards/:id' do
-  content_type :json
-  card = Card.create(params[:card])
-  card.to_json
-end
-
-get '/api/cards/:id' do
-  content_type :json
-  card = Card.find(params[:id].to_i)
-  card.to_json
-end
-
-put '/api/cards/:id' do
-  content_type :json
-  card = Card.find(params[:id].to_i).update(params[:card])
+post '/api/cards' do
+  card = Card.create(card_parameters)
   card.to_json
 end
 
 patch '/api/cards/:id' do
-  content_type :json
-  card = Card.find(params[:id].to_i).update(params[:card])
+  card = Card.find(params[:id].to_i)
+  card.update(card_parameters())
+
+  content_type(:json)
   card.to_json
 end
 
-delete '/api/cards/:id' do
-  content_type :json
-  id = params[:id].to_i
-  card = Card.destroy(id)
+put '/api/cards/:id' do
+  card = Card.find(params[:id].to_i)
+  card.update(card_parameters())
+
+  content_type(:json)
+  card.to_json
 end

@@ -28,10 +28,10 @@ h1,h2,h3,h4,h5,h6 {
   width: 46%;
 }
 .block-half:nth-child(1) {
-  background-color: rgb(80, 47, 53);
+  background-color: rgb(186, 175, 142);
 }
 .block-half:nth-child(2) {
-  background-color: rgb(68, 102, 110);
+  background-color: rgb(199, 254, 252);
 }
 
 .block-third {
@@ -43,7 +43,7 @@ h1,h2,h3,h4,h5,h6 {
   width: 30%;
 }
 .block-third:nth-child(1) {
-  background-color: rgb(54, 20, 36);
+  background-color: rgb(241, 197, 210);
 }
 .block-third:nth-child(2) {
   background-color: rgb(177, 167, 108);
@@ -61,10 +61,10 @@ h1,h2,h3,h4,h5,h6 {
   width: 22%;
 }
 .block-quarter:nth-child(1) {
-  background-color: rgb(54, 38, 44);
+  background-color: rgb(255, 244, 209);
 }
 .block-quarter:nth-child(2) {
-  background-color: rgb(13, 22, 26);
+  background-color: rgb(155, 176, 143);
 }
 .block-quarter:nth-child(3) {
   background-color: rgb(131, 92, 107);
